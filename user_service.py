@@ -45,6 +45,7 @@ def print_user(user_id):
 
 def get_user_email(user_id):
     user = get_user(user_id)
+    print(f"Retrieved user: {user.name if user else 'None'}")  # Debugging statement
 
     if not user:
         return None
